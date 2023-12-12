@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <!-- <a href="index.html" class="lien-icone">
+            <img src="images/logo.png" alt="Logo Robbie Lens">
+        </a> -->
+        <a href="" class="header-logo"> Jodré DM - Python Developper</a>
+        <div>
+            <a href="index.html" class="header-link">Accueil</a>
+            <a href="a-propos.html" class="header-link">À propos</a>
+            <a href="portfolio.html" class="header-link">Portfolio</a>
+        </div>
+    </nav>
+</header>
+  <section class="section1">
+    <h1>Section 1</h1>
+    <div class="container" id="container-1">
+      <div class="flip-card" onclick="rotateCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" id="card-1-front">Project 1</div>
+          <div class="flip-card-back" id="card-1-back">
+            <h1>Project 1</h1>
+            <h3>API Python</h3>
+            <p>Développement d'une API pour la gestion du blablabla</p>
+            <a href="https://www.google.com">Voir plus de détails</a>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="rotateCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" id="card-2-front">Project 2</div>
+          <div class="flip-card-back" id="card-2-back">
+            <h1>Project 2</h1>
+            <h3>Web App</h3>
+            <p>Développement d'une WebApp pour la gestion du blablabla</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="rotateCard(this)">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" id="card-3-front">Project 3</div>
+          <div class="flip-card-back" id="card-3-back">
+            <h1>Project 3</h1>
+            <h3>Portfolio</h3>
+            <p>Développement d'un portfolio en DJANGO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="instructions"><p>Cliquez pour maintenir la carte retournée</p></div>
+  </section>
+  <section class="section2">
+    <h1>Section 2</h1>
+    <div class="container" id="container-2">
+      <div class="card" id="number-6">Number 6</div>
+    </div>
+  </section>
+  <section>
+  </section>
+  <script>
+    function rotateCard(card) {
+      card.classList.toggle("flipped");
+    }
+  </script>
+</body>
+</html>
