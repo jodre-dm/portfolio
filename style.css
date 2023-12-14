@@ -1,88 +1,173 @@
-body {
+* {
+  margin: 0;
+  font-size: 1em;
+}
+
+body{
   color: white;
-  background: rgb(215,214,215);
-  background: linear-gradient(90deg, rgba(215,214,215,1) 0%, rgba(120,142,222,1) 21%, rgba(224,127,141,1) 47%, rgba(228,74,18,1) 79%, rgba(238,229,116,0.9137780112044818) 100%);
-/*   background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+  /* background: rgb(215,214,215); */
+  /* background: linear-gradient(90deg, rgba(215,214,215,1) 0%, rgba(120,142,222,1) 21%, rgba(224,127,141,1) 47%, rgba(228,74,18,1) 79%, rgba(238,229,116,0.9137780112044818) 100%); */
+  /* background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
   /* background-image: url('https://newevolutiondesigns.com/images/wallpapers/4k-space-wallpaper-10.jpg');  */
   /* background-image: url('https://wallpapercave.com/wp/wp3188042.jpg');  */
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(112,125,138,1) 50%, rgba(42,43,45,1) 91%);
+  /* background: rgb(0,0,0); */
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(112,125,138,1) 50%, rgba(42,43,45,1) 91%); */
+  background-image:url(assets/blue-wallpaper-1920x1200.jpg);
   background-attachment: fixed;
-  background-position: center;
-  /* font-family: 'Hind Siliguri', sans-serif; */
+  /* background-position: center; */
+
+
+    /* font-family: 'Hind Siliguri', sans-serif; */
   /* font-family: 'Hedvig Letters Serif', serif; */
   /* font-family: 'Quicksand', sans-serif; */
-  font-family: 'Playfair Display', serif;
+  font-family: 'Manrope', sans-serif;
+  /* font-family: 'Playfair Display', serif; */
 }
 
-header {
-  background-color: white;
-  /* position: fixed;
-  width: 100%; */
+header{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 50px;
+  width: 100%;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  width: auto;
 }
 
-.header-logo{
-  /* font-family: 'Hedvig Letters Serif', serif; */
-  font-size: larger;
-  font-weight: bold;
+nav a {
   color: black;
-
+  text-decoration: none;
+  padding: 10px;
+  &:hover{
+    transition: 700ms;
+    border-radius: 35px;
+    transform: scale(1.05);
+    /* text-decoration: underline; */
+    background-color: rgb(24, 23, 97);
+    color: white;
+  }
 }
 
-.header-link{
-  color:black;
-  margin: 5px;
-}
-
-
-h1 {
-  text-align: center;
-}
-
-div.container {
+nav div {
   display: flex;
-  flex-direction: row;
-  background: rgba(130, 130, 130, 0.7); /* Couleur avec opacité */
-  border: 0px solid black;
+  text-align: center;
+  padding: 10px;
+  }
+
+
+.JDM-logo {
+  font-size: 1.5em;
+  &:hover {
+    text-decoration:  none;
+    background-color: inherit;
+    color: black;
+    transition: none;
+    transform: none;
+  }
+}
+
+section {
+  padding: 70px;
   margin: auto;
-/*   margin-bottom: 1px; */
-  justify-content: space-between;
-  width: 830px;
+  align-items: center;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 1.5em;
   padding: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  padding-left: 30px;
+}
+
+
+.accueil-introduction {
+  display: flex;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(231, 218, 247);
+  width: 1000px;
+  margin-top: 100px;
+}
+
+h1{
+  font-size: 2.5em;
+}
+
+
+h3{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  line-height: 2.5em;
+  text-align: justify;
+}
+
+.presentation-text{
+  padding: 20px;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-radius: 0 0 0 3px;
+}
+
+.photo-jodre {
+  padding-top: 40px;
+  margin-left: 25px;
+}
+img {
+box-shadow : 6px 6px 6px rgba(0, 0, 0, 0.5);
+border-radius: 1%;
+}
+.accueil-projets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    /* width: 100%; */
+  }
+  
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgba(130, 130, 130, 0.7); /* Couleur avec opacité */
+    border-radius: 10px;
+    padding: 20px;
+    width: 1000px;  
 }
 
 .flip-card {
-  background-color: transparent;
-/*   border : 1px solid black; */
-  width : 250px;
-  height : 300px;
-  border-radius : 6px;
-  perspective : 1000px;  
+  /* background-color: rgba(120,142,222,0.5); */
+  border-radius: 10px;
+  width: 250px;
+  height: 300px;
+  padding: 20px;
 }
 
 .flip-card-inner {
-  box-shadow : 6px 6px 6px rgba(0, 0, 0, 0.5);
-  position : relative;
-  width : 100%;
-  height : 100%;
-  text-align : center;  
+  line-height: 1.5em;
+  text-align: center;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: relative;
   transition : 0.7s;
   transform-style: preserve-3d;
   border-radius: 10px;
-  
-  
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card-inner p{
+  text-align: center;
+}
+
+.flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -114,6 +199,34 @@ div.container {
   color: white;
 }
 
+.flip-card-back-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 83.333%;
+  border-radius: 0 0 10px 10px;
+  color: black
+  
+}
+
+.flip-card-back-content h3 {
+  padding-top: 25px;
+}
+.flip-card-back-content p {
+  padding: 10px;
+  line-height: 2em;
+}
+
+.flip-card-back-title {
+  border-radius: 10px 10px 0 0;
+  height: 16.666%;
+}
+
+#flip-card-back-title-card-3{
+  background-color: rgba(194, 145, 241, 0.5);
+  /* background-color: red; */
+}
+
+
+
 #card-1-back {
   background-color: rgba(194, 145, 241, 0.5);  
 }
@@ -123,31 +236,26 @@ div.container {
 }
 
 #card-3-back {
-  background-color: rgba(240, 97, 26, 0.8);  
+  /* background-color: rgba(240, 97, 26, 0.8);   */
+  display: block;
 }
 
 .flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-a {
-  text-decoration: none;
-  color: #ADE;
-  &:hover {
-    color: #000;
-    text-decoration: underline;
-    font-weight: bold;
-  }
-}
-
 .instructions {
   font-style: italic;
-  color: yellow;
+  font-size: 0.8em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* .section1 {
-  background-color:red;
-} */
+.accueil-contact {
+  /* background-color: blueviolet; */
+}
+
+footer {
+  background-color: white;
+}
